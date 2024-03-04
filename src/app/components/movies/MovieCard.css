@@ -1,0 +1,45 @@
+.movie-card {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.movie-card img {
+	width: 200px;
+	height: auto;
+	margin-right: 20px;
+	border-radius: 8px;
+}
+
+.movie-details {
+	flex: 1;
+}
+
+.movie-details h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.movie-details p {
+	margin: 0;
+}
+
+.movie-details button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.movie-details button:hover {
+	background-color: #0056b3;
+}
+
+.movie-details-list {
+	text-align: left;
+}
