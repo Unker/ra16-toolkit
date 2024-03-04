@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import SearchMovies from './app/components/movies/SearchMovies';
 import Favorites from './app/components/movies/Favorites';

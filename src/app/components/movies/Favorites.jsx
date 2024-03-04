@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromFavoritesMovies } from '../../favoritesSlice';
 import './MovieCard.css';
@@ -10,8 +9,6 @@ const Favorites = () => {
   const handleRemoveFromFavorites = movieId => {
     dispatch(removeFromFavoritesMovies(movieId));
   };
-
-  console.log(favoritesMovies)
 
   return (
     <div>

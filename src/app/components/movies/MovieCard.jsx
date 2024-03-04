@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { useGetMovieByIdQuery } from './moviesApi';
 import { addToFavoritesMovies, removeFromFavoritesMovies } from '../../favoritesSlice';
@@ -52,6 +52,15 @@ const MovieCard = ({ movie }) => {
       )}
     </div>
   );
+};
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    imdbID: PropTypes.string.isRequired,
+    Title: PropTypes.string.isRequired,
+    Poster: PropTypes.string.isRequired,
+    Year: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default MovieCard;

@@ -1,5 +1,4 @@
-import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
-import { setupListeners } from '@reduxjs/toolkit/query'
+import { configureStore } from '@reduxjs/toolkit';
 import { moviesApi } from './components/movies/moviesApi';
 import favoritesReducer from './favoritesSlice';
 
